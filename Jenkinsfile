@@ -1,6 +1,7 @@
 //create a simple jenkinsfile with build and test stages
 pipeline {
     agent any
+
     stages {
         stage('Build') {
             steps {
@@ -10,9 +11,13 @@ pipeline {
                 dir('knowledge_gpt') {
                     //run the command poetry install to install all the dependencies
                     // sh 'poetry install'
+                    //install python3-pip
+                    // sh 'sudo apt-get install python3-pip'
+                    //check if python installed
+                    sh 'python3 --version'
 
                     //install the library pip install poetry
-                    sh 'pip install poetry'
+                    // sh 'pip install poetry'
                     echo 'Building..'
                     
 
