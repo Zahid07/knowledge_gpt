@@ -28,6 +28,7 @@ pipeline {
             }
         }
 
-        
     }
 }
+
+//where is a yaml file created
