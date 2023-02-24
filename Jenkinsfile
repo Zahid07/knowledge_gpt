@@ -9,7 +9,7 @@ pipeline {
         stage('Cloning the repo') {
             steps {
                 git branch: 'Jenkinsworkflow', url: 'https://github.com/Zahid07/knowledge_gpt.git'
-                sh 'pip3 install poetry'
+                bat 'pip3 install poetry'
 
             }
         }
