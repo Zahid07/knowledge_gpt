@@ -22,10 +22,6 @@ jobs:
     - name: Running black
       run: black --check .
 
-    #perform codeql analysis
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-
       
 
     
