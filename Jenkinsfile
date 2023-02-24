@@ -14,12 +14,12 @@ pipeline {
             }
         }
 
-        // stage('Lint with flake8') {
-        //     steps {
-        //         sh 'pip3 install flake8'
-        //         sh 'flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics'
-        //     }
-        // }
+        stage('Lint with flake8') {
+            steps {
+                bat 'pip3 install flake8'
+                bat 'flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics'
+            }
+        }
 
         // stage('Format with black') {
         //     steps {
