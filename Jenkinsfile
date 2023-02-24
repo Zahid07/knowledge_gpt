@@ -13,6 +13,7 @@ pipeline {
                     //print in knowledge_gpt directory
                     echo 'Building..'
                     
+                    
                 }
 
             }
