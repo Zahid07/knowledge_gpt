@@ -8,12 +8,11 @@ pipeline {
                 git branch: 'Jenkinsworkflow', url: 'https://github.com/Zahid07/knowledge_gpt.git'
                 //go to knowledge_gpt directory
                 dir('knowledge_gpt') {
-                    //run the command to build the docker image
-                    // sh 'docker build -t knowledge_gpt .'
-                    //print in knowledge_gpt directory
+                    //run the command poetry install to install all the dependencies
+                    sh 'poetry install'
                     echo 'Building..'
                     
-                    
+
                 }
 
             }
