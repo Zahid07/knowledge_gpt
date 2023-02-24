@@ -15,7 +15,7 @@ pipeline {
                     // sh 'sudo add-apt-repository ppa:deadsnakes/ppa'
 
                     //install the library pip install poetry
-                    // sh 'pip install poetry'
+                    sh 'pip3 install poetry'
                     echo 'Building..'
                     
 
