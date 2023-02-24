@@ -9,17 +9,7 @@ pipeline {
         stage('Cloning the repo') {
             steps {
                 git branch: 'Jenkinsworkflow', url: 'https://github.com/Zahid07/knowledge_gpt.git'
-                //go to knowledge_gpt directory
-                dir('knowledge_gpt') {
-                    //install python 3.11
-                    // sh 'sudo add-apt-repository ppa:deadsnakes/ppa'
-
-                    //install the library pip install poetry
-                    sh 'pip3 install poetry'
-                    echo 'Building..'
-                    
-
-                }
+                sh 'pip3 install poetry'
 
             }
         }
