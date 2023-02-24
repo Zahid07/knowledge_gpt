@@ -21,11 +21,13 @@ pipeline {
             }
         }
 
-        // stage('Format with black') {
-        //     steps {
-        //         sh 'pip3 install black'
-        //         sh 'black .'
-        //     }
-        // }
+        stage('Format with black') {
+            steps {
+                bat 'pip3 install black'
+                bat 'black .'
+            }
+        }
+
+        
     }
 }
