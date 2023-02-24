@@ -9,7 +9,10 @@ pipeline {
                 //go to knowledge_gpt directory
                 dir('knowledge_gpt') {
                     //run the command poetry install to install all the dependencies
-                    sh 'poetry install'
+                    // sh 'poetry install'
+
+                    //install the library pip install poetry
+                    sh 'pip install poetry'
                     echo 'Building..'
                     
 
