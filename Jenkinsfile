@@ -10,7 +10,7 @@ pipeline {
                 //go to knowledge_gpt directory
                 dir('knowledge_gpt') {
                     //install python 3.11
-                    sh 'sudo apt-get install python3.11'
+                    sh 'sudo add-apt-repository ppa:deadsnakes/ppa'
 
                     //install the library pip install poetry
                     // sh 'pip install poetry'
